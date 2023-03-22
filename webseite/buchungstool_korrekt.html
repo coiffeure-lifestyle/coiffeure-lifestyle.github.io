@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <title>Friseur-Buchungstool</title>
+    <style>
+        h1{text-align: center;}
+          form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(127, 0, 0);
+  }
+        tr:hover {background-color: #D6EEEE;}
+            ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             background-color: #333;
+            }
+    
+            li {
+             float: left;
+            }
+    
+            li a {
+             display: block;
+             color: white;
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+            }
+    
+            li a:hover {
+             background-color: #111;
+            s}
+            @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    }
+    }
+    @media screen and (max-width: 400px) {
+    .topnav a {
+    float: none;
+    width: 100%;
+    }
+    }
+    .diff{
+    text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <i class="fas fa-cloud"></i>
+    <ul>
+      <li><a href="Coiffeure-Lifestyle_korrekt.html">Home</a></li>
+      <li><a href="Preisliste_korrekt.html">Preisliste</a></li>
+      <li><a href="Kontakt_korrekt.html">Kontakt</a></li>
+      <li><a href="buchungstool_korrekt.html">Buchungs-tool</a></li>
+      <li style="float:right"><a href="Über mich_korrekt.html">&#220;ber mich</a></li>
+    </ul>
+    <h1>Friseur-Buchungstool</h1>
+    <form action="https://formspree.io/f/myyadpdv" method="POST">
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </p>
+      <p>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email">
+      </p>
+      <p>
+        <label for="service">Gewünschter Service:</label>
+        <select id="service" name="service">
+          <option value=""></option>
+          <option value="Waschen – Schneiden – Föhnen langes Haar	">Waschen – Schneiden – Föhnen langes Haar	</option>
+          <option value="Waschen – Schneiden – Föhnen Kurzhaar">Waschen – Schneiden – Föhnen Kurzhaar</option>
+          <option value="Waschen – Föhnen Kurzhaar">Waschen – Föhnen Kurzhaar</option>
+          <option value="Balsam">Balsam</option>
+          <option value="Haarkur intensiv">Haarkur intensiv</option>
+          <option value="Färben Kurzhaar oder Ansatz">Färben Kurzhaar oder Ansatz</option>
+          <option value="Färben langes Haar">Färben langes Haar</option>
+          <option value="Strähnen Oberkopf	">Strähnen Oberkopf	</option>
+          <option value="Strähnen Kurzhaar	">Strähnen Kurzhaar	</option>
+          <option value="Strähnen langes Haar ganzer Kopf">Strähnen langes Haar ganzer Kopf</option>
+          <option value="Dauerwelle Kurzhaar">Dauerwelle Kurzhaar</option>
+          <option value="Dauerwelle langes Haar">Dauerwelle langes Haar</option>
+          <option value="Hochsteckfrisur">Hochsteckfrisur</option>
+          <option value="Make-up">Make-up</option>
+          <option value="Keratin Behandlung">Keratin Behandlung</option>
+          <option value="Waschen – Schneiden – Kopfmassage	">Waschen – Schneiden – Kopfmassage	</option>
+          <option value="Waschen – Schneiden">Waschen – Schneiden</option>
+          <option value="Schneiden">Schneiden</option>
+          <option value="Trockenhaarschnitt">Trockenhaarschnitt</option>
+          <option value="Färben">Färben</option>
+          <option value="Strähnen">Strähnen</option>
+          <option value="Dauerwelle">Dauerwelle</option>
+          <option value="Bart schneiden">Bart schneiden</option>
+          <option value="Zusätzliche Kopfmassage 10 Minuten">Zusätzliche Kopfmassage 10 Minuten</option>
+          <option value="Bis 6 Jahre">Bis 6 Jahre</option>
+          <option value="7 bis 11 Jahre">7 bis 11 Jahre</option>
+          <option value="12 bis 16 Jahre">12 bis 16 Jahre</option>
+        </select>
+      </p>
+      <p>
+        <label for="date">Wunschtermin:</label>
+        <input type="date" id="date" name="date">
+      </p>
+      <p>
+        <label for="time">Wunschzeit:</label>
+        <input type="time" id="time" name="time">
+      </p>
+      <label for="bemerkung">Bemerkungen:</label>
+      <textarea id="bemerkung" name="bemerkung"></textarea><br><br>
+      <p>
+        <input type="submit" value="Buchung vornehmen">
+      </p>
+    </form>
+    <div class="diff">
+    <p>Wenn sie ihre E-Mail oder Ihren Namen nicht Preisgeben möchten, dann können Sie sich beim Kontakt bei der Vorgegebenen Nummer melden.</p>
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="https://formspree.io/legal/terms-of-service/" target="_blank" style="text-decoration: none; color: #333;">AGB</a>
+    <span style="margin: 0 5px;">|</span>
+    <a href="https://formspree.io/legal/privacy-policy/" target="_blank" style="text-decoration: none; color: #333;">Datenschutz</a>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+    }
+    
+    h1 {
+      color: rgb(0, 0, 0);
+      text-align: center;
+    }
+    
+    table, th, td {
+      border:1.25px solid rgb(0, 0, 0);
+    }
+    
+    tr:hover {
+      background-color: #D6EEEE;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    
+    /* Style the card */
+    .card {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px;
+      height: 320px;
+      background: #553c1b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+      border-radius: 15px;
+      cursor: pointer;
+      text-align: center;
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+    
+    .card::before,
+    .card::after {
+      position:absolute;
+      content: "";
+      width: 20%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+      background-color: #e3c8a5;
+      transition: all 0.5s;
+      align-items: center;
+    }
+    
+    .card::before {
+      top: 0;
+      right: 0;
+      border-radius: 0 15px 0 100%;
+    }
+    
+    .card::after {
+      bottom: 0;
+      left: 0;
+      border-radius: 0 100% 0 15px;
+    }
+    
+    .card:hover::before,
+    .card:hover::after {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      transition: all 0.5s;
+    }
+    
+    .card:hover::after {
+      content: "079 470 02 38";
+    }
+  </style>
+</head>
+<body>
+  <i class="fas fa-cloud"></i>
+  <ul>
+    <li><a href="Coiffeure-Lifestyle_korrekt.html">Home</a></li>
+    <li><a href="Preisliste_korrekt.html">Preisliste</a></li>
+    <li><a href="Kontakt_korrekt.html">Kontakt</a></li>
+    <li><a href="buchungstool_korrekt.html">Buchungs-tool</a></li>
+    <li style="float:right"><a href="Über mich_korrekt.html">&#220;ber mich</a></li>
+  </ul>
+<div class="card">Telefonnummer</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.tbl-container {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.table-img-container {
+  float: left;
+  width: 30%;
+  margin-right: 2%;
+}
+
+.table-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.container1,
+.container2,
+.container3 {
+  position: relative;
+  width: 68%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+.container1:hover .image,
+.container2:hover .image,
+.container3:hover .image {
+  opacity: 0.3;
+}
+
+.container1 .text,
+.container2 .text,
+.container3 .text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+@media screen and (max-width: 800px) {
+  .tbl-container,
+  .table-img-container,
+  .container1,
+  .container2,
+  .container3 {
+    width: 100%;
+    padding: 0;
+  }
+}
+:root {
+  --accent-color: rgb(253, 255, 201);
+  --hover-color: #D6EEEE;
+  --nav-bg-color: #333;
+  --nav-hover-color: #111;
+  --header-color: rgb(0, 0, 0);
+  --border-color: rgb(0, 0, 0);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: var(--header-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.txt-box {
+  border: 5px outset var(--accent-color);
+  background-color: var(--accent-color);
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+  padding: 20px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.tbl-container {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1.25px solid var(--border-color);
+  padding: 0.5rem 1rem;
+}
+
+tr:hover {background-color: var(--hover-color);}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+@media screen and (max-width: 800px) {
+  .leftbox, .rightbox  {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul li {float: none; width: 100%;}
+}
+  
+
+</style>
+<body>
+  <i class="fas fa-cloud"></i>
+  <ul>
+    <li><a href="Coiffeure-Lifestyle_korrekt.html">Home</a></li>
+    <li><a href="Preisliste_korrekt.html">Preisliste</a></li>
+    <li><a href="Kontakt_korrekt.html">Kontakt</a></li>
+    <li><a href="buchungstool_korrekt.html">Buchungs-tool</a></li>
+    <li style="float:right"><a href="Über mich_korrekt.html">&#220;ber mich</a></li>
+  </ul>
+<h1>Preisliste</h1>
+
+<div class="tbl-container">
+  <h2>Damen</h2>
+  <table>
+    <tr><td>Waschen – Schneiden – Föhnen langes Haar</td><td>CHF 70.- bis CHF 80.-</td></tr>
+    <tr><td>Waschen – Schneiden – Föhnen Kurzhaar</td><td>CHF 65.-</td></tr>
+    <tr><td>Waschen – Föhnen Kurzhaar</td><td>CHF 37.-</td></tr>
+    <tr><td>Balsam</td><td>CHF 3.-</td></tr>
+    <tr><td>Haarkur intensiv</td><td>CHF 10.-</td></tr>
+    <tr><td>Färben Kurzhaar oder Ansatz</td><td>CHF 60.-</td></tr>
+    <tr><td>Färben langes Haar</td><td>CHF 75.-</td></tr>
+    <tr><td>Strähnen Oberkopf</td><td>CHF 60.- bis CHF 70.-</td></tr>
+    <tr><td>Strähnen Kurzhaar</td><td>CHF 60.-</td></tr>
+    <tr><td>Strähnen langes Haar ganzer Kopf</td><td>CHF 80.- bis CHF 120.-</td></tr>
+    <tr><td>Dauerwelle Kurzhaar</td><td>CHF 75.-</td></tr>
+    <tr><td>Dauerwelle langes Haar</td><td>CHF 100.-</td></tr>
+    <tr><td>Hochsteckfrisur</td><td>CHF 50.- bis CHF 70.-</td></tr>
+    <tr><td>Make-up</td><td>CHF 30.- bis CHF 50.-</td></tr>
+    <tr><td>Ker atin Behandlung</td><td>CHF 450.-</td></tr>
+  </table>
+</div>
+<div class="container1">
+  <img src="beautiful-woman-with-curls-makeup.jpg" alt="Frau" class="image" style="width:50%">
+  <div class="middle">
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="tbl-container">
+  <h2>Herren</h2>
+  <table>
+    <tr><td>Waschen – Schneiden – Kopfmassage</td><td>CHF 52.-</td></tr>
+    <tr><td>Waschen – Schneiden</td><td>CHF 49.-</td></tr>
+    <tr><td>Schneiden</td><td>CHF 45.-</td></tr>
+    <tr><td>Trockenhaarschnitt</td><td>CHF 35.-</td></tr>
+    <tr><td>Färben</td><td>CHF 50.- bis CHF 60.-</td></tr>
+    <tr><td>Strähnen</td><td>CHF 40.- bis CHF 60.-</td></tr>
+    <tr><td>Dauerwelle</td><td>CHF 50.- bis CHF 90.-</td></tr>
+    <tr><td>Bart schneiden</td><td>CHF 10.-</td></tr>
+    <tr><td>Zusätzliche Kopfmassage 10 Minuten</td><td>CHF 10.-</td></tr>
+  </table>
+</div>
+<div class="container2">
+  <img src="639c12de-1d0b-46a4-bdf3-972ea83f7dda.png" alt="Mann" class="image" style="width:50%">
+  <div class="middle">
+    <div class="text"></div>
+  </div>
+</div>
+<div class="tbl-container">
+  <h2>Kinder</h2>
+  <table>
+    <tr><td>Bis 6 Jahre</td><td>CHF 25.-</td></tr>
+    <tr><td>7 bis 11 Jahre</td><td>CHF 28.- bis CHF 30.-</td></tr>
+    <tr><td>12 bis 16 Jahre</td><td>CHF 32.- bis CHF 40.-</td></tr>
+  </table>
+</div>
+<div class="containe">
+  <div class="container3">
+    <img src="2a1dee6b-50ed-4be0-8922-88b43844f06f.png" alt="Kind" class="image" style="width:50%">
+    <div class="middle">
+      <div class="text"></div>
+    </div>
+  </div>
+</body>
+</html>
